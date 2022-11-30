@@ -35,6 +35,9 @@ fabric.Image.fromURL(url, function (img) {
     left: 200,
     top: 200,
   });
+  // clip
   img.globalCompositeOperation = 'destination-in';
+  // mask
+  // img.globalCompositeOperation = 'destination-out';
   canvas.add(img);
 });
